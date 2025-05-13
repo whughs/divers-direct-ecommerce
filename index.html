@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divers Direct - Scuba Diving Equipment & Gear</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dd-red': '#EE1C25',
+                        'dd-teal': '#00B2B2',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="m-0 p-0 font-sans">
+    <!-- Top Banner -->
+    <div class="bg-dd-red text-white text-center py-3 font-bold text-lg tracking-wide">
+        FREE SHIPPING* | EARN DIRECT REWARDS POINTS
+    </div>
+
+    <!-- Shipping Info Banner -->
+    <div class="bg-white text-black text-center py-3 border-b flex items-center justify-center space-x-2 text-sm">
+        <i class="fas fa-truck"></i>
+        <span>Free Shipping on orders of $49+ |</span>
+        <a href="#" class="underline hover:text-dd-red transition-colors">Signup for Direct Rewards</a>
+    </div>
+
+    <!-- Main Header -->
+    <header class="bg-black text-white py-4">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <!-- Left Section -->
+            <div class="flex items-center space-x-6">
+                <button class="text-2xl hover:text-dd-red transition-colors">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a href="/" class="text-2xl font-bold">
+                    <div class="text-white font-bold text-2xl">DIVERS DIRECT</div>
+                </a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="flex-1 mx-8">
+                <div class="relative">
+                    <input type="text" 
+                           placeholder="Search for products..." 
+                           class="w-full px-6 py-3 rounded-lg text-black text-sm focus:outline-none focus:ring-2 focus:ring-dd-red">
+                    <button class="absolute right-4 top-1/2 transform -translate-y-1/2 hover:text-dd-red transition-colors">
+                        <i class="fas fa-search text-gray-500"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="flex items-center space-x-8">
+                <a href="#" class="flex items-center space-x-2 hover:text-dd-red transition-colors">
+                    <i class="fas fa-location-dot"></i>
+                    <span class="text-sm">Store Pickup</span>
+                </a>
+                <a href="#" class="hover:text-dd-red transition-colors"><i class="fas fa-user text-xl"></i></a>
+                <a href="#" class="hover:text-dd-red transition-colors"><i class="fas fa-shopping-cart text-xl"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <div class="relative bg-dd-teal text-white py-20 overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <div class="w-1/2 space-y-8 pr-8">
+                    <div class="text-3xl font-bold tracking-wide fade-in">SCUBAPRO</div>
+                    <h2 class="text-7xl font-bold tracking-tight fade-in" style="animation-delay: 0.2s">FREE OCTO</h2>
+                    <p class="text-xl opacity-90 fade-in" style="animation-delay: 0.4s">With select regulator purchase</p>
+                    <button class="bg-white text-black px-10 py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 fade-in" style="animation-delay: 0.6s">
+                        GET YOURS!
+                    </button>
+                </div>
+                <div class="w-1/2 flex justify-end">
+                    <div class="relative w-full max-w-lg">
+                        <div class="absolute inset-0 bg-white opacity-10 rounded-full blur-3xl transform -rotate-12"></div>
+                        <img src="assets/images/placeholder.svg" 
+                             alt="Scuba Gear" 
+                             class="relative rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-500 fade-in"
+                             style="animation-delay: 0.4s">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation Arrows -->
+        <button class="absolute left-8 top-1/2 transform -translate-y-1/2 text-5xl opacity-75 hover:opacity-100 transition-all hover:scale-110 hover:text-white">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="absolute right-8 top-1/2 transform -translate-y-1/2 text-5xl opacity-75 hover:opacity-100 transition-all hover:scale-110 hover:text-white">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- Product Categories -->
+    <div class="container mx-auto py-24 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Snorkeling Essentials -->
+            <div class="category-card group cursor-pointer fade-in" style="animation-delay: 0.2s">
+                <h3 class="text-2xl font-bold mb-6 group-hover:text-dd-teal transition-colors">Snorkeling essentials</h3>
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50 z-10"></div>
+                    <img src="assets/images/placeholder.svg" 
+                         alt="Snorkeling Gear" 
+                         class="w-full transition-transform duration-500 group-hover:scale-110">
+                </div>
+            </div>
+
+            <!-- Scuba Diving Gear -->
+            <div class="category-card group cursor-pointer fade-in" style="animation-delay: 0.4s">
+                <h3 class="text-2xl font-bold mb-6 group-hover:text-dd-teal transition-colors">Gear up for scuba diving</h3>
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50 z-10"></div>
+                    <img src="assets/images/placeholder.svg" 
+                         alt="Scuba Gear" 
+                         class="w-full transition-transform duration-500 group-hover:scale-110">
+                </div>
+            </div>
+
+            <!-- Popular Now -->
+            <div class="category-card group cursor-pointer fade-in" style="animation-delay: 0.6s">
+                <h3 class="text-2xl font-bold mb-6 group-hover:text-dd-teal transition-colors">Popular now</h3>
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50 z-10"></div>
+                    <img src="assets/images/placeholder.svg" 
+                         alt="Popular Items" 
+                         class="w-full transition-transform duration-500 group-hover:scale-110">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add header shadow on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 0) {
+                header.classList.add('header-shadow');
+            } else {
+                header.classList.remove('header-shadow');
+            }
+        });
+    </script>
+</body>
+</html>
